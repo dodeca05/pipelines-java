@@ -3,13 +3,20 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+parameters:
+- name: deployPkgNum
+  displayName: 배포 할 패캐지 번호
+  type: string
+
 trigger:
 - none
 
-pool:
-  name: default
 
+
+pool:
+  name: Default
 steps:
+- checkout: none
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
