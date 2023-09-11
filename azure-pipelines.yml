@@ -28,7 +28,13 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'docker login -u rms -p $(DOCKER_PASSWORD) rmspkgw-dev.gmarket.com'
+    script: |
+      docker login -u rms -p $(DOCKER_PASSWORD) rmspkgw-dev.gmarket.com
+            
+      docker tag ado-sample-app:$(Build.BuildId) rmspkgw-dev.gmarket.com/ado-sample-app:$(Build.BuildId)
+            
+      docker push rmspkgw-dev.gmarket.com/ado-sample-app:$(Build.BuildId)
+
 - task: Docker@2
   inputs:
     command: 'login'
