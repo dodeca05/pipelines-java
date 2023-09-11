@@ -26,18 +26,10 @@ steps:
     containerRegistry: 'rmspkg-dev'
     command: 'login'
 - task: Docker@2
-  displayName: DockerBuild
+  displayName: Docker Build and Push
   inputs:
     containerRegistry: 'rmspkg-dev'
     repository: 'ado-sample-app'
-    command: 'build'
+    command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 
-
-
-
-- task: Docker@2
-  inputs:
-    containerRegistry: 'rmspkg-dev'
-    repository: 'ado-sample-app'
-    command: 'push'
