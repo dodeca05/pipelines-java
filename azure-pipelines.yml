@@ -37,7 +37,7 @@ steps:
 
 - task: Docker@2
   inputs:
+    containerRegistry: 'rmspkg-dev'
     command: 'login'
-    arguments: '-u rms -p $(DOCKER_PASSWORD) rmspkgw-dev.gmarket.com'
 
 
