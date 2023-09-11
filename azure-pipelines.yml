@@ -32,4 +32,8 @@ steps:
     command: 'build'
     arguments: "-t rmspkgw-dev.gmarket.com/ado-sample-app:$(Build.BuildId)"
     Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'rmspkg-dev'
+    command: 'push'
 
