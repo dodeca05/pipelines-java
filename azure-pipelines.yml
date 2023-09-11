@@ -25,6 +25,10 @@ steps:
     command: 'build'
     arguments: "-t ado-sample-app:$(Build.BuildId)"
     Dockerfile: '**/Dockerfile'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'docker login -u rms -p $(DOCKER_PASSWORD) rmspkgw-dev.gmarket.com'
 - task: Docker@2
   inputs:
     command: 'login'
