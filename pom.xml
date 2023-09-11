@@ -8,7 +8,7 @@
   <name>Hello world sample web app</name>
   <repositories>
         <repository>
-            <id>custom-repo</id>
+            <id>central</id>
             <name>Private Maven Group Repository</name>
             <url>https://prm.ebaykorea.com/nexus/repository/maven-group/</url>
         </repository>
