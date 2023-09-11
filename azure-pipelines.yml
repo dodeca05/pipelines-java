@@ -22,5 +22,6 @@ steps:
     goals: 'package -Dmaven.test.skip=true'
 - task: Docker@2
   inputs:
-    command: 'buildAndPush'
+    command: 'build'
+    arguments: "-t myapp:v1.0"
     Dockerfile: '**/Dockerfile'
