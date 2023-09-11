@@ -23,6 +23,6 @@ steps:
 - task: Docker@2
   inputs:
     command: 'build'
-    arguments: "-t ado-sample-app: $(Build.BuildId)"
+    arguments: "-t ado-sample-app:$(Build.BuildId)"
     Dockerfile: '**/Dockerfile'
 
