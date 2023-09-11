@@ -29,7 +29,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'rmspkg-dev'
-    command: 'buildAndPush'
-    arguments: "-t ado-sample-app:$(Build.BuildId)"
+    command: 'build'
+    arguments: "-t rmspkgw-dev.gmarket.com/ado-sample-app:$(Build.BuildId)"
     Dockerfile: '**/Dockerfile'
 
