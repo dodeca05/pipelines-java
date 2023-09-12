@@ -32,5 +32,5 @@ steps:
     repository: 'ado-sample-app'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: 'rms-build'
+
 
