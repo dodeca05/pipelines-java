@@ -20,4 +20,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'curl --location --request GET ''https://prm.ebaykorea.com/nexus/'''
+    script: 'curl --location --request GET ''https://112.169.64.227/nexus/'''
