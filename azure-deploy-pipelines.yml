@@ -24,3 +24,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: KubernetesManifest@1
+  inputs:
+    action: 'deploy'
+    connectionType: 'kubernetesServiceConnection'
+    kubernetesServiceConnection: 'aks_test'
+    namespace: 'azure-vote'
+    manifests: 'sha256:f2eae3bf5aee4b62d0d53769364b0b112749c0ef35e537d34354cad98c20c132'
+    containers: 'ado-sample-app'
