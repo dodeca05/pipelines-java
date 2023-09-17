@@ -30,5 +30,5 @@ steps:
     connectionType: 'kubernetesServiceConnection'
     kubernetesServiceConnection: 'aks_test'
     namespace: 'azure-vote'
-    manifests: 'sha256:f2eae3bf5aee4b62d0d53769364b0b112749c0ef35e537d34354cad98c20c132'
+    manifests: 'deploy.yml'
     containers: 'ado-sample-app'
