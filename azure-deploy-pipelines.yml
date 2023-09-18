@@ -14,7 +14,8 @@ trigger:
 
 
 pool:
-  name: ADOWIN101GM
+  name: Release
+  demands: Agent.Name -equals ADOWIN101GM
   
 steps:
 - checkout: none
