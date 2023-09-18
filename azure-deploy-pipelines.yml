@@ -14,7 +14,7 @@ trigger:
 
 
 pool:
-  vmImage: ubuntu-latest
+  name: ADOWIN101GM
   
 steps:
 - checkout: none
@@ -25,12 +25,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: KubectlInstaller@0
-  inputs:
-    kubectlVersion: 'latest'
-- task: KubeloginInstaller@0
-  inputs:
-    kubeloginVersion: 'latest'
+
 - task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
