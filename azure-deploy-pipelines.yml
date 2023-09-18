@@ -14,7 +14,8 @@ trigger:
 
 
 pool:
-  name: defalut
+  name: default
+  
 steps:
 - checkout: none
 - script: echo Hello, world!
