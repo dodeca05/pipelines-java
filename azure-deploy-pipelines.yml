@@ -21,7 +21,6 @@ pool:
 
   
 steps:
-- checkout: none
 - script: ls
   displayName: 'Run a one-line script'
 
