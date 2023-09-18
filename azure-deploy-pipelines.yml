@@ -29,7 +29,8 @@ steps:
 
 - task: Kubernetes@1
   inputs:
-    connectionType: 'None'
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'aks2'
     namespace: 'azure-vote'
     command: 'apply'
     useConfigurationFile: true
