@@ -8,6 +8,7 @@ trigger:
 
 pool:
   name: Release
+  demands: Agent.Name -equals ADOWIN101GM
 
 steps:
 - script: echo Hello, world!
