@@ -39,5 +39,6 @@ steps:
     useConfigurationFile: true
     configurationType: 'inline'
     inline: '-f deploy.yml'
+    arguments: '--validate=false'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
