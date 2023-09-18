@@ -16,7 +16,7 @@ trigger:
 pool:
   name: Release
   demands:
-  - agent.Name -equals adolin101gm-rms
+  - agent.Name -equals ADOWIN101GM
 
 
   
