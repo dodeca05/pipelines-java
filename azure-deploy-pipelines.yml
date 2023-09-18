@@ -14,7 +14,7 @@ trigger:
 
 
 pool:
-  vmImage: ubuntu-latest
+  name: Defalut
 steps:
 - checkout: none
 - script: echo Hello, world!
