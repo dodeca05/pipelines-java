@@ -22,7 +22,7 @@ pool:
   
 steps:
 - checkout: none
-- script: echo Hello, world!
+- script: pwd
   displayName: 'Run a one-line script'
 
 - script: |
