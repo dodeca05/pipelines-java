@@ -30,6 +30,13 @@ steps:
     arguments: 'pods'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      kuberctl apply -f deploy.yml
 - task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
