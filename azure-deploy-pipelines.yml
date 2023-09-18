@@ -14,7 +14,7 @@ trigger:
 
 
 pool:
-  name: Defalut
+  name: defalut
 steps:
 - checkout: none
 - script: echo Hello, world!
