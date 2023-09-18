@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: my-container
-      image: rmspkgw-dev.gmarket.com/rms-qa-java-bluegreen:28  # 사용할 이미지
+      image: rmspkgw-dev.gmarket.com/rms-qa-java-bluegreen:21  # 사용할 이미지
       ports:
         - containerPort: 80  # 컨테이너가 노출하는 포트 (이미지에 따라 다를 수 있음)
   restartPolicy: Always  # 컨테이너 재시작 정책
