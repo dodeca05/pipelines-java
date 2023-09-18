@@ -14,7 +14,7 @@ trigger:
 
 
 pool:
-  name: default
+  vmImage: ubuntu-latest
   
 steps:
 - checkout: none
