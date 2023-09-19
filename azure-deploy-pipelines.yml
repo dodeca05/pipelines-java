@@ -44,8 +44,6 @@ steps:
     namespace: 'azure-vote'
     command: 'apply'
     useConfigurationFile: true
-    configurationType: 'inline'
-    inline: '-f deploy.yml'
-    arguments: '--validate=false'
+    configuration: 'deploy.yml'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
