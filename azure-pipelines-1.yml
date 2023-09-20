@@ -8,7 +8,7 @@ trigger:
 
 pool:
   name: Release
-  demands: Agent.Name -equals ADOWIN101GM
+  demands: Agent.Name -equals adolin101gm-rms
 
 steps:
 - script: echo Hello, world!
