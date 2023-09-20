@@ -17,6 +17,6 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    git clone git@github.ebaykorea.com:org-ebaykorea/rms-qa.git
+    git clone http://github.ebaykorea.com/org-ebaykorea/rms-qa.git
   displayName: 'Run a multi-line script'
 
