@@ -42,6 +42,8 @@ steps:
             image: rmspkgw.gmarket.com/rms-nodejs-bluegreen:${{ parameters.deployPkgNum }}  # 사용할 이미지
             ports:
               - containerPort: 80  # 컨테이너가 노출하는 포트 (이미지에 따라 다를 수 있음)
+        imagePullSecrets:
+          - name: rmspkg-secret
         restartPolicy: Always  # 컨테이너 재시작 정책
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
